@@ -1,0 +1,12 @@
+# Never commit actual secrets
+.secrets
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak

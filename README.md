@@ -13,6 +13,17 @@ My personal configuration files for macOS.
 - 🔐 Secure secrets management (not committed to git)
 - 🎨 Optimized for Catppuccin Mocha theme
 
+## Custom Functions
+
+### `gwt` - Git Worktree Helper
+Creates a git worktree and copies gitignored config files from the main worktree:
+- `.env`
+- `.claude/settings.local.json`
+
+```bash
+gwt .worktrees/my-feature feature/my-feature
+```
+
 ## Fresh Setup on a New Machine
 
 ### 1. Clone this repo

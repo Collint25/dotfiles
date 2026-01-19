@@ -31,4 +31,11 @@ gwt() {
     cp "$main_worktree/.claude/settings.local.json" "$1/.claude/settings.local.json"
     echo "Copied .claude/settings.local.json"
   fi
+
+  # Copy .vscode/settings.json if it exists in main
+  if [[ -f "$main_worktree/.vscode/settings.json" ]]; then
+    mkdir -p "$1/.vscode"
+    cp "$main_worktree/.vscode/settings.json" "$1/.vscode/settings.json"
+    echo "Copied .vscode/settings.json"
+  fi
 }
